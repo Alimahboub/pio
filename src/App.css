@@ -55,13 +55,12 @@ body {
 
 /* Right Side - Engagements Panel */
 .engagements-panel {
-  width: 30%;
+  width: 35%;
   height: 100vh;
   background: transparent;
   padding: 30px 25px;
   overflow-y: auto;
   flex-shrink: 0;
-  border-left: 3px solid #2563eb;
   position: relative;
 }
 
@@ -251,7 +250,7 @@ body {
   border-radius: 8px;
   font-size: 10px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.3;
   text-align: justify;
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
 }
@@ -304,7 +303,7 @@ body {
 
 .flagship-description {
   font-size: 10px;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #4a5568;
   text-align: justify;
   overflow: hidden;
@@ -316,7 +315,7 @@ body {
 
 .timeline-description {
   font-size: 10px;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #4a5568;
   text-align: justify;
 }
@@ -356,7 +355,7 @@ body {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   padding-left: 15px;
 }
 
@@ -374,27 +373,50 @@ body {
 }
 
 .timeline-year {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 800;
   color: #1e40af;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .timeline-content strong {
   display: block;
-  font-size: 11px;
+  font-size: 14px;
   color: #2d3748;
   font-weight: 700;
-  margin-bottom: 3px;
-  line-height: 1.2;
+  margin-bottom: 2px;
+  line-height: 1.1;
 }
 
 .timeline-content p {
-  font-size: 10px;
+  font-size: 13px;
   color: #4a5568;
-  line-height: 1.3;
+  line-height: 1.2;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 4px;
+}
+
+.tech-tags span {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 9px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+  transition: transform 0.2s ease;
+  line-height: 1.1;
+}
+
+.tech-tags span:hover {
+  transform: scale(1.05);
 }
 
 

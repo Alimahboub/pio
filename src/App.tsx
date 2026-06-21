@@ -138,60 +138,111 @@ function App() {
               <div className="timeline-year">Nov 2019 – Present</div>
               <div className="timeline-content">
                 <strong>Qatar National Port (MWANINA)</strong>
-                <p>Technical Team Leader | Application Owner | Solution Design Lead</p>
-                <p className="timeline-description">Lead technical delivery, application ownership, solution design, and architecture for national-scale Port Community System supporting Qatar's maritime trade ecosystem.</p>
+                <p>Application Architect | Technical Team Leader</p>
+                <p className="timeline-description">Lead technical delivery, solution design, and architecture for national-scale Port Community System (PCS).</p>
+                <div className="tech-tags">
+                  <span>IBM Cloud</span>
+                  <span>Spring Boot</span>
+                  <span>React JS</span>
+                  <span>WatsonX AI</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-year">2026</div>
+              <div className="timeline-year">Mar 2026 – Jun 2026</div>
               <div className="timeline-content">
                 <strong>MCIT Qatar (Logistics Digital Platform RFP)</strong>
-                <p>Application Architect • Qatar</p>
+                <p>Application Architect</p>
+                <p className="timeline-description">Architecture design, prototype development, and solutioning matrix for national logistics platform.</p>
+                <div className="tech-tags">
+                  <span>React JS</span>
+                  <span>IBM Cloud</span>
+                  <span>WatsonX AI</span>
+                  <span>Visio</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">2025 – 2026</div>
               <div className="timeline-content">
-                <strong>PCS/PMIS Modernization (Mono to Micro)</strong>
-                <p>Application Architect • Qatar</p>
+                <strong>PCS/PMIS Modernization</strong>
+                <p>Application Architect</p>
+                <p className="timeline-description">Modernized monolithic J2EE/JSF application to microservices architecture with Spring Boot and React JS on IBM Cloud.</p>
+                <div className="tech-tags">
+                  <span>Spring Boot</span>
+                  <span>React JS</span>
+                  <span>IBM Cloud</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-year">2024</div>
+              <div className="timeline-year">Jan 2024 – Apr 2024</div>
               <div className="timeline-content">
                 <strong>Qatar Petroleum (QT)</strong>
-                <p>Application Architect (Solutioning) • Qatar</p>
+                <p>Application Architect</p>
+                <p className="timeline-description">Enterprise solution design and technical architecture for petroleum sector digital transformation.</p>
+                <div className="tech-tags">
+                  <span>React JS</span>
+                  <span>IBM Cloud</span>
+                  <span>WatsonX AI</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">2019</div>
               <div className="timeline-content">
-                <strong>Saudi Ports</strong>
-                <p>Application Architect (Solutioning) • Saudi Arabia</p>
+                <strong>Saudi Ports RFP</strong>
+                <p>Application Architect</p>
+                <p className="timeline-description">RFP response with comprehensive architecture design and technical proposal for national ports system.</p>
+                <div className="tech-tags">
+                  <span>React JS</span>
+                  <span>IBM Cloud</span>
+                  <span>Visio</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">Nov 2017 – Nov 2019</div>
               <div className="timeline-content">
-                <strong>King Abdullah Port (KAP)</strong>
-                <p>Technical Team Leader | Senior Application Developer</p>
-                <p className="timeline-description">IBM's primary client-side technical focal point for Saudi Arabia's fastest-growing commercial port, leading technical engagements and enterprise software solutions.</p>
+                <strong>King Abdullah Port</strong>
+                <p>Technical Team Leader | Senior Developer</p>
+                <p className="timeline-description">Led technical engagements and enterprise solutions for Saudi Arabia's fastest-growing commercial port.</p>
+                <div className="tech-tags">
+                  <span>RTC</span>
+                  <span>WAS</span>
+                  <span>IIB</span>
+                  <span>J2EE</span>
+                  <span>DB2</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">Jan 2016 – Nov 2017</div>
               <div className="timeline-content">
-                <strong>Egyptian National Post Office</strong>
+                <strong>Egyptian National Post Office Banking</strong>
                 <p>Senior Application Developer</p>
-                <p className="timeline-description">Enterprise Banking Transformation Program - Developed banking services supporting accounts, remittances, deposits, and financial transactions.</p>
+                <p className="timeline-description">Developed banking services for accounts, remittances, and financial transactions.</p>
+                <div className="tech-tags">
+                  <span>Spring</span>
+                  <span>Oracle Forms</span>
+                  <span>JSF</span>
+                  <span>Oracle DB</span>
+                </div>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">Nov 2011 – Jun 2015</div>
               <div className="timeline-content">
-                <strong>Blue Horizon Configurator</strong>
-                <p>Senior Application Developer | Team Leader</p>
-                <p className="timeline-description">Enterprise configuration platform supporting IBM global operations - Led Level 3 support, development activities, and team coordination.</p>
+                <strong>Blue Horizon Configurator AMS</strong>
+                <p>Senior Developer | Team Leader</p>
+                <p className="timeline-description">Led L3 support and development for IBM global operations configuration platform.</p>
+                <div className="tech-tags">
+                  <span>Struts</span>
+                  <span>OSGI</span>
+                  <span>Spring</span>
+                  <span>JSF</span>
+                  <span>DB2</span>
+                </div>
               </div>
             </div>
           </div>
