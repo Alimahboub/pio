@@ -22,15 +22,16 @@ body {
 /* Fixed Left Side - Profile and Contact Panel */
 .profile-photo-container {
   width: 20%;
+  min-width: 200px;
   height: 100vh;
   background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 30px 20px;
+  padding: 2vh 1.5vw;
   flex-shrink: 0;
-  gap: 20px;
+  gap: 1.5vh;
 }
 
 .profile-card {
@@ -742,3 +743,165 @@ body {
 }
 
 /* Made with Bob */
+
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .profile-photo-container {
+    width: 22%;
+    min-width: 180px;
+  }
+  
+  .content-panel {
+    min-width: 350px;
+    padding: 2vh 2vw;
+  }
+  
+  .engagements-panel {
+    width: 38%;
+    min-width: 280px;
+  }
+  
+  .name-title {
+    font-size: 28px;
+  }
+  
+  .role-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .profile-photo-container {
+    width: 25%;
+    min-width: 160px;
+    padding: 1.5vh 1vw;
+  }
+  
+  .content-panel {
+    min-width: 320px;
+    padding: 1.5vh 2vw;
+  }
+  
+  .engagements-panel {
+    width: 40%;
+    min-width: 250px;
+    padding: 1.5vh 1.5vw;
+  }
+  
+  .name-title {
+    font-size: 24px;
+  }
+  
+  .role-title {
+    font-size: 14px;
+  }
+  
+  .objective-text {
+    font-size: 11px;
+  }
+  
+  .section h3 {
+    font-size: 12px;
+  }
+  
+  .skill-tags span,
+  .domain-card,
+  .tech-tags span {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .infographic-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .profile-photo-container {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    flex-direction: row;
+    padding: 2vh 3vw;
+    gap: 2vw;
+  }
+  
+  .profile-card {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+  
+  .contact-card {
+    flex: 1;
+    max-height: 150px;
+  }
+  
+  .qr-card {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+  
+  .content-panel {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    padding: 3vh 4vw;
+  }
+  
+  .engagements-panel {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    padding: 3vh 4vw;
+  }
+  
+  .name-title {
+    font-size: 28px;
+  }
+  
+  .role-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-photo-container {
+    flex-direction: column;
+    padding: 3vh 4vw;
+  }
+  
+  .profile-card,
+  .qr-card {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .contact-card {
+    max-height: none;
+  }
+  
+  .name-title {
+    font-size: 24px;
+  }
+  
+  .role-title {
+    font-size: 14px;
+  }
+  
+  .objective-text {
+    font-size: 12px;
+  }
+  
+  .domain-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .badges-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
