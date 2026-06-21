@@ -630,8 +630,8 @@ body {
   flex-direction: column;
   overflow: hidden;
   flex-shrink: 0;
-  min-height: calc(1in + auto);
-  padding-bottom: 1in;
+  min-height: 96px;
+  padding-bottom: 96px;
 }
 
 .badges-grid {
