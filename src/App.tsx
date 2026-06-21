@@ -27,10 +27,10 @@ function App() {
           </div>
         </div>
         <div className="qr-card">
-          <h3 className="qr-title">SCAN TO CONNECT</h3>
+          <h3 className="qr-title">SCAN TO WHATSAPP</h3>
           <div className="qr-code-container">
             <QRCodeSVG
-              value="https://www.linkedin.com/in/ali-mahboub/"
+              value="https://wa.me/201015251425"
               size={120}
               level="H"
               includeMargin={true}
