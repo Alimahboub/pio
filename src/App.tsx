@@ -1,12 +1,42 @@
 import React from 'react';
 import './App.css';
+import { QRCodeSVG } from 'qrcode.react';
 
 function App() {
   return (
     <div className="infographic-container">
-      {/* Fixed Left Side - Profile Photo */}
+      {/* Fixed Left Side - Profile Photo and Contact */}
       <div className="profile-photo-container">
-        <img src="/profile-photo.png" alt="Aly Mahboub" className="profile-photo" />
+        <div className="profile-card">
+          <img src="/ali-face.jpg" alt="Aly Mahboub" className="profile-photo-round" />
+        </div>
+        <div className="contact-card">
+          <h3 className="contact-title">CONTACT INFORMATION</h3>
+          <div className="contact-items">
+            <div className="contact-tag">🇪🇬 Egyptian Mobile: +20 1015251425</div>
+            <div className="contact-tag">🇶🇦 Qatar Mobile: +974 3373 2769</div>
+            <div className="contact-tag">💼 Business Email: AMAHBOUB@eg.ibm.com</div>
+            <div className="contact-tag">📧 Personal Email: ali.mahboub@gmail.com</div>
+            <a href="https://www.linkedin.com/in/ali-mahboub/" target="_blank" rel="noopener noreferrer" className="contact-tag contact-tag-link">
+              <svg className="linkedin-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn: linkedin.com/in/ali-mahboub
+            </a>
+            <a href="https://www.credly.com/users/ali-taha-mahboub" target="_blank" rel="noopener noreferrer" className="contact-tag contact-tag-link">🏆 Credly: credly.com/users/ali-taha-mahboub</a>
+          </div>
+        </div>
+        <div className="qr-card">
+          <h3 className="qr-title">SCAN TO CONNECT</h3>
+          <div className="qr-code-container">
+            <QRCodeSVG
+              value="https://www.linkedin.com/in/ali-mahboub/"
+              size={120}
+              level="H"
+              includeMargin={true}
+            />
+          </div>
+        </div>
       </div>
 
       {/* Middle - Header and Skills */}
@@ -14,10 +44,6 @@ function App() {
         {/* Header */}
         <div className="header-section">
           <h1 className="name-title">ALY TAHA ALY MAHBOUB</h1>
-          <div className="contact-info">
-            <span>📞 +20 1015251425</span>
-            <span>✉️ AMAHBOUB@eg.ibm.com</span>
-          </div>
           <h2 className="role-title">APPLICATION ARCHITECT | Senior Application Developer</h2>
           <p className="objective-text">14+ Years Enterprise Software Delivery | Transportation & Maritime Industry Specialist | IBM Generative & Agentic AI Developer</p>
           <div className="experience-badge">Full Australian Work Rights | No Sponsorship Required | Open to Relocation</div>
@@ -96,12 +122,11 @@ function App() {
               <div className="icon-circle">🌐</div>
               <h3>INDUSTRY DOMAINS</h3>
             </div>
-            <div className="domain-list">
-              <div className="domain-item">🚢 Maritime Logistics & Port Operations</div>
-              <div className="domain-item">🚚 Travel & Transportation</div>
-              <div className="domain-item">🏛️ Government & Public Sector</div>
-              <div className="domain-item">🏦 Enterprise Banking & Financial Services</div>
-              <div className="domain-item">🔄 Cross-Government Digital Integration</div>
+            <div className="domain-cards">
+              <div className="domain-card">🚢 Maritime Logistics & Port Operations</div>
+              <div className="domain-card">🚚 Travel & Transportation</div>
+              <div className="domain-card">🏛️ Government & Public Sector</div>
+              <div className="domain-card">🏦 Enterprise Banking & Financial Services</div>
             </div>
           </div>
 
@@ -172,6 +197,7 @@ function App() {
                   <span>Spring Boot</span>
                   <span>React JS</span>
                   <span>IBM Cloud</span>
+                  <span>WatsonX AI</span>
                 </div>
               </div>
             </div>
@@ -189,7 +215,7 @@ function App() {
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-year">2019</div>
+              <div className="timeline-year">Feb 2019 – Jun 2019</div>
               <div className="timeline-content">
                 <strong>Saudi Ports RFP</strong>
                 <p>Application Architect</p>
