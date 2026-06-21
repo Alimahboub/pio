@@ -8,7 +8,7 @@ function App() {
       {/* Fixed Left Side - Profile Photo and Contact */}
       <div className="profile-photo-container">
         <div className="profile-card">
-          <img src="/ali-face.jpg" alt="Aly Mahboub" className="profile-photo-round" />
+          <img src={`${process.env.PUBLIC_URL}/ali-face.jpg`} alt="Aly Mahboub" className="profile-photo-round" />
         </div>
         <div className="contact-card">
           <h3 className="contact-title">CONTACT INFORMATION</h3>
@@ -136,16 +136,16 @@ function App() {
               <h3>CERTIFICATIONS & BADGES</h3>
             </div>
             <div className="badges-grid">
-              <img src="/badges/IBM-Generative-and-Agentic-AI-Developer---Intermediate.png" alt="IBM Generative and Agentic AI Developer" className="badge-img" />
-              <img src="/badges/Architectural-Thinking.png" alt="Architectural Thinking" className="badge-img" />
-              <img src="/badges/Travel-Transportation-Industry-Gold.png" alt="Travel Transportation Industry Gold" className="badge-img" />
-              <img src="/badges/Travel-Transportation-Industry-Silver.png" alt="Travel Transportation Industry Silver" className="badge-img" />
-              <img src="/badges/Cloud_Platform_Application_Developer_v1.png" alt="Cloud Platform Application Developer" className="badge-img" />
-              <img src="/badges/Blockchain_Essentials.png" alt="Blockchain Essentials" className="badge-img" />
-              <img src="/badges/Watson_Knowledge_Studio.png" alt="Watson Knowledge Studio" className="badge-img" />
-              <img src="/badges/IBM-Growth-Behaviors.png" alt="IBM Growth Behaviors" className="badge-img" />
-              <img src="/badges/IBM-Mentor__282_29.png" alt="IBM Mentor" className="badge-img" />
-              <img src="/badges/Intellectual-capital-property.png" alt="Intellectual Capital Property" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/IBM-Generative-and-Agentic-AI-Developer---Intermediate.png`} alt="IBM Generative and Agentic AI Developer" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Architectural-Thinking.png`} alt="Architectural Thinking" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Travel-Transportation-Industry-Gold.png`} alt="Travel Transportation Industry Gold" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Travel-Transportation-Industry-Silver.png`} alt="Travel Transportation Industry Silver" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Cloud_Platform_Application_Developer_v1.png`} alt="Cloud Platform Application Developer" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Blockchain_Essentials.png`} alt="Blockchain Essentials" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Watson_Knowledge_Studio.png`} alt="Watson Knowledge Studio" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/IBM-Growth-Behaviors.png`} alt="IBM Growth Behaviors" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/IBM-Mentor__282_29.png`} alt="IBM Mentor" className="badge-img" />
+              <img src={`${process.env.PUBLIC_URL}/badges/Intellectual-capital-property.png`} alt="Intellectual Capital Property" className="badge-img" />
             </div>
           </div>
         </div>
