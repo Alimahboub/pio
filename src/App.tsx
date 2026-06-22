@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import { QRCodeSVG } from 'qrcode.react';
+import MobilePortfolio from './MobilePortfolio';
 
-function App() {
+function DesktopPortfolio() {
+  useEffect(() => {
+    document.body.classList.add('desktop-view');
+    return () => {
+      document.body.classList.remove('desktop-view');
+    };
+  }, []);
+
   return (
     <div className="infographic-container">
       {/* Fixed Left Side - Profile Photo and Contact */}
@@ -257,17 +266,15 @@ function App() {
               </div>
             </div>
             <div className="timeline-item">
-              <div className="timeline-year">Nov 2011 – Jun 2015</div>
+              <div className="timeline-year">Jan 2011 – Jan 2016</div>
               <div className="timeline-content">
-                <strong>Blue Horizon Configurator AMS</strong>
-                <p>Senior Developer | Team Leader</p>
-                <p className="timeline-description">Led L3 support and development for IBM global operations configuration platform.</p>
+                <strong>Egyptian Ministry of Finance</strong>
+                <p>Application Developer</p>
+                <p className="timeline-description">Developed government financial systems and cross-ministry integration solutions.</p>
                 <div className="tech-tags">
-                  <span>Struts</span>
-                  <span>OSGI</span>
-                  <span>Spring</span>
-                  <span>JSF</span>
-                  <span>DB2</span>
+                  <span>J2EE</span>
+                  <span>Oracle</span>
+                  <span>SOA</span>
                 </div>
               </div>
             </div>
@@ -275,6 +282,30 @@ function App() {
         </div>
       </div>
     </div>
+  );
+}
+
+function MobileRedirect() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile && window.location.pathname === '/') {
+      navigate('/m');
+    }
+  }, [navigate]);
+
+  return <DesktopPortfolio />;
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MobileRedirect />} />
+        <Route path="/m" element={<MobilePortfolio />} />
+      </Routes>
+    </Router>
   );
 }
 

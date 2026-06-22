@@ -1,0 +1,267 @@
+.mobile-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Profile Section */
+.mobile-profile {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  border: 5px solid #2563eb;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+}
+
+.mobile-name {
+  font-size: 24px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 10px 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.mobile-role {
+  font-size: 16px;
+  color: #1e40af;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.mobile-subtitle {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 5px 0;
+}
+
+/* Sections */
+.mobile-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-section-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #2563eb;
+}
+
+.mobile-text {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.mobile-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  margin-top: 10px;
+}
+
+/* Contact */
+.mobile-contact-item {
+  background: #f0f4f8;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #2d3748;
+  border-left: 4px solid #2563eb;
+}
+
+.mobile-link {
+  display: block;
+  background: #e0e7ff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #1e40af;
+  text-decoration: none;
+  border-left: 4px solid #2563eb;
+  transition: all 0.3s ease;
+}
+
+.mobile-link:hover {
+  background: #c7d2fe;
+  transform: translateX(5px);
+}
+
+/* QR Code */
+.mobile-qr-section {
+  text-align: center;
+}
+
+.mobile-qr {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills */
+.mobile-skill-category {
+  margin-bottom: 20px;
+}
+
+.mobile-skill-category h4 {
+  font-size: 15px;
+  color: #1e40af;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mobile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mobile-tags span {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid #93c5fd;
+}
+
+/* Domain Cards */
+.mobile-domain-card {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Badges */
+.mobile-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.mobile-badge-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mobile-badge-img:hover {
+  transform: scale(1.05);
+}
+
+/* Timeline */
+.mobile-timeline-item {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border-left: 4px solid #2563eb;
+}
+
+.mobile-timeline-date {
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mobile-timeline-title {
+  font-size: 15px;
+  color: #1e3a8a;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.mobile-timeline-role {
+  font-size: 13px;
+  color: #4a5568;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mobile-timeline-desc {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.mobile-footer {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.mobile-desktop-link {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1e40af;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mobile-desktop-link:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .mobile-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mobile-badges {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Made with Bob */
