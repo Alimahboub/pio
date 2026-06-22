@@ -297,6 +297,12 @@ body {
   padding-bottom: 15px;
   border-bottom: 3px solid transparent;
   background: linear-gradient(90deg, #1e40af 0%, #3b82f6 50%, #1e40af 100%) bottom/100% 3px no-repeat;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.header-section:hover {
+  transform: scale(1.05);
 }
 
 .name-title {
@@ -310,8 +316,12 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 0.9;
+  transition: all 0.3s ease;
 }
 
+.header-section:hover .name-title {
+  letter-spacing: 2px;
+}
 
 .role-title {
   font-size: 15px;
@@ -320,6 +330,12 @@ body {
   margin-bottom: 4px;
   line-height: 1.1;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header-section:hover .role-title {
+  color: #1e40af;
+  font-size: 16px;
 }
 
 .objective-text {
@@ -327,6 +343,12 @@ body {
   color: #4a5568;
   line-height: 1.2;
   margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.header-section:hover .objective-text {
+  color: #2563eb;
+  font-size: 13px;
 }
 
 .experience-badge {
@@ -338,6 +360,12 @@ body {
   font-size: 12px;
   font-weight: 700;
   box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4);
+  transition: all 0.3s ease;
+}
+
+.header-section:hover .experience-badge {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
   letter-spacing: 0.3px;
 }
 

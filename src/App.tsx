@@ -1,140 +1,10 @@
 import React from 'react';
 import './App.css';
 import { QRCodeSVG } from 'qrcode.react';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
-import { Document, Packer, Paragraph, ImageRun, PageOrientation } from 'docx';
-import { saveAs } from 'file-saver';
-import PptxGenJS from 'pptxgenjs';
 
 function App() {
-  const exportToPDF = async () => {
-    const element = document.querySelector('.infographic-container') as HTMLElement;
-    if (!element) return;
-
-    try {
-      const canvas = await html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: '#ffffff',
-        width: element.scrollWidth,
-        height: element.scrollHeight,
-      });
-
-      const imgWidth = 297; // A4 landscape width in mm
-      const imgHeight = 210; // A4 landscape height in mm
-      const imgData = canvas.toDataURL('image/png');
-      
-      const pdf = new jsPDF({
-        orientation: 'landscape',
-        unit: 'mm',
-        format: 'a4'
-      });
-
-      pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-      pdf.save('Aly_Mahboub_Portfolio.pdf');
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-    }
-  };
-
-  const exportToDOCX = async () => {
-    const element = document.querySelector('.infographic-container') as HTMLElement;
-    if (!element) return;
-
-    try {
-      const canvas = await html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: '#ffffff',
-      });
-
-      const imgData = canvas.toDataURL('image/png');
-      const base64Data = imgData.split(',')[1];
-
-      const doc = new Document({
-        sections: [{
-          properties: {
-            page: {
-              size: {
-                orientation: PageOrientation.LANDSCAPE,
-                width: 11906, // A4 landscape width in twips
-                height: 8419,  // A4 landscape height in twips
-              },
-              margin: {
-                top: 0,
-                right: 0,
-                bottom: 0,
-                left: 0,
-              },
-            },
-          },
-          children: [
-            new Paragraph({
-              children: [
-                new ImageRun({
-                  type: 'png',
-                  data: Uint8Array.from(atob(base64Data), c => c.charCodeAt(0)),
-                  transformation: {
-                    width: 792,  // Full page width
-                    height: 559, // Full page height
-                  },
-                } as any),
-              ],
-            }),
-          ],
-        }],
-      });
-
-      const blob = await Packer.toBlob(doc);
-      saveAs(blob, 'Aly_Mahboub_Portfolio.docx');
-    } catch (error) {
-      console.error('Error generating DOCX:', error);
-    }
-  };
-
-  const exportToPPTX = async () => {
-    const element = document.querySelector('.infographic-container') as HTMLElement;
-    if (!element) return;
-
-    try {
-      const canvas = await html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: '#ffffff',
-      });
-
-      const imgData = canvas.toDataURL('image/png');
-      
-      const pptx = new PptxGenJS();
-      pptx.layout = 'LAYOUT_WIDE'; // 16:9 landscape
-      
-      const slide = pptx.addSlide();
-      slide.addImage({
-        data: imgData,
-        x: 0,
-        y: 0,
-        w: '100%',
-        h: '100%',
-      });
-
-      await pptx.writeFile({ fileName: 'Aly_Mahboub_Portfolio.pptx' });
-    } catch (error) {
-      console.error('Error generating PPTX:', error);
-    }
-  };
-
   return (
-    <>
-      <div className="export-buttons">
-        <button onClick={exportToPDF} className="export-btn">📄 Export PDF</button>
-        <button onClick={exportToDOCX} className="export-btn">📝 Export DOCX</button>
-        <button onClick={exportToPPTX} className="export-btn">📊 Export PPTX</button>
-      </div>
-      <div className="infographic-container">
+    <div className="infographic-container">
       {/* Fixed Left Side - Profile Photo and Contact */}
       <div className="profile-photo-container">
         <div className="profile-card">
@@ -405,7 +275,6 @@ function App() {
         </div>
       </div>
     </div>
-    </>
   );
 }
 
